@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Protest+Riot&display=swap');
+* { margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-weight: 100;
+  font-style: normal;
+}
+
+header{
+  background-color: rgb(158, 175, 177);
+}
+h1{
+
+}
+nav{
+  width: 100%;
+}
+a{
+  color: black;
+}
+
+.icon_XL{
+  font-size: 30px;
+}
+.ws__color{
+  color: green;
+}
+.x__color{
+  color: black;
+}
+.insta__color{
+  color: rgb(233, 136, 10);
+}
+.contenedorImagen{
+  display: inline-block;
+  width: 100%;
+  .contenedorIndex{
+    display: inline-block;
+    height: 45vh;
+    width: 100%;
+    margin:0 auto;
+    }
+    .img>img{
+      display: inline-block;
+      border-radius: 5px;
+      background-color: rgb(183, 234, 252);
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+      padding: 0.5rem;
+      
+    }
+    .img{
+      color: white;
+      display: inline-block;
+      margin: 0px 7rem;
+    }
+  }
+
+.textoH2P{
+  border: 5px solid black;
+  width: 300px; /* ancho del texto*/
+  margin: 0 auto; /* margen vertical 0 y margen horizontal automatico*/
+  padding: 1.5rem; /*relleno para las vizualizacion*/ 
+  margin-bottom: 15px;
+}
+.textoH2P>h2{
+  margin-bottom: 10px;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.textoH2P>p{
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+main{
+  background-color: rgb(165, 210, 221);
+}
+.animalesH2P>H2{
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.imagenAnimales>img{
+  border-radius: 5px;
+  background-color: rgb(183, 234, 252);
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+.videoAnimales{
+  display: inline-block
+}
+footer{
+  background-color: #ffffff;
+}
+.containerAlzheimer>img{
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 0.5rem;
+
+}
+.redes{
+ 
+}
+.ubicacion{
+
+}
+.contacto{
+
+}
+.mapa{
+  background-color: rgb(101, 178, 192);
+  position: relative;
+  width: 100vw;
+  height: 30vh;
+  display: inline-block;
+}
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"]{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input[type="email"]{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input[type="password"]{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"]{
+  background-color: #5b40f1;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.beneficios>h2{
+  margin-top: 30px;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.beneficios>p{
+  margin-top: 30px;
+  display: inline-block;
+}
