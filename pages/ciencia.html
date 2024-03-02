@@ -1,99 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../assets/img/geonet_logo.png"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" />
     <title>GEONET</title>
-    <!--<style>
-            #miLogo {
-                width: 200px; anchura
-                height: 200px; altura 
-            }
-    </style>-->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/estilo.css"> <!-- link etiqueta para llamar la carpeta estilo.css-->
-    <script src="https://kit.fontawesome.com/5e41d920e3.js" crossorigin="anonymous" defer></script> <!--script para los iconos de redes-->
-</head>
-<body>
-    <header>     
-            <div class="separacionLogo">
-                <img id="favicon" src="../assets/img/geonet_logo.png" alt="Noticias del planeta">
+    <link rel="icon" href="../assets/img/geonet_logo.png" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/estilo.css" />
+    <!-- link etiqueta para llamar la carpeta estilo.css-->
+    <script src="https://kit.fontawesome.com/5e41d920e3.js" crossorigin="anonymous" defer></script>
+    <!--script para los iconos de redes-->
+  </head>
+  <body>
+    <header class="container-fluid d-flex justify-content-between align-items-center g-1 desktop-header">
+      <nav class="navbar navbar-expand-lg navbar-lg desktop-navbar">
+        <div class="container-fluid">
+          <div>
+            <img id="favicon" src="../assets/img/geonet_logo.png" alt="Noticias del planeta" class="w-50" />
+            <h1 class="fs-3 mt-1">GEONET</h1>
+          </div>
+          <!-- test -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav g-4 d-flex align-items-center justify-content-md-between container-md gap-3">
+              <a
+                class="nav-link text-dark active rounded-pill border-primary shadow-sm bg-body rounded text-center container hover-link"
+                aria-current="page"
+                href="../index.html"
+                >Inicio</a
+              >
+              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container" href="./animales.html">Animales</a>
+              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container" href="./ciencia.html">Ciencia</a>
+              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container" href="./sucesos.html">Sucesos</a>
+              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container" href="./suscribete.html">Suscribete</a>
             </div>
-            <nav>
-                
-                <ul> <!--Abajo se encuentran los enlaces a las otras paginas-->
-                    <li><a href="../index.html">inicio</a></li>
-                    <li><a href="../pages/animales.html">animales</a></li>
-                    <li><a href="../pages/ciencia.html">ciencia</a></li>
-                    <li><a href="../pages/sucesos.html">sucesos</a></li>
-                    <li><a href="../pages/suscribete.html">suscribete</a></li>
-                </ul>
-            </nav>
-                <h1>GEONET</h1>
+          </div>
+        </div>
+      </nav>
     </header>
     
     <main>
-        <section>
-            <H2>Científicos descubren un nuevo método para la detección temprana del Alzheimer utilizando inteligencia artificial</H2>
+      <div class="container mt-3">
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-8 col-lg-4 col-xl-4">
+            <section class="container__Alzheimer">
+            <H2 class="text-center">Científicos descubren un nuevo método para la detección temprana del Alzheimer utilizando inteligencia artificial</H2>
                 <p>Un equipo de investigadores del Imperial College de Londres (Reino Unido) ha encontrado una forma de diagnosticar de forma
                 precoz la enfermedad de Alzheimer con un 98% de eficacia. Según explican en un artículo publicado este lunes en la revista Science,
                 su método se basa en combinar el uso de un escáner del cerebro con maquinaria ampliamente disponible en los hospitales y de la inteligencia artificial.
                 Este nuevo método analítico de datos muestra un "potencial para aumentar la precisión en el diagnóstico del alzhéimer", concluyen los investigadores</p>
           </section>
-          <section class="containerAlzheimer">
-              <img src="../assets/img/ImagenAlzheimer.avif" alt="Alzheimer">
-          </section>
+          <div>
+            <section class="container__img__alzheimer">
+              <img src="../assets/img/ImagenAlzheimer.avif" class="img-fluid" alt="Alzheimer">
+            </section>
+          </div>
+          <div class="col-sm-12 col-md-8 col-lg-4 col-xl-4">
+            <div class="flex-column justify-content-center">
           <section class="videoAlzheimer">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/Cl15bbvs5d0?si=odylmHeCRyF6oIl7"
               title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
               gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </section>
+          </div>
+        </div>
     </main>
     
-    <footer>
-      <section class="redes">
-        <h3>nuestras redes sociales</h3>
-        <h4>whatsapp</h4>
-        <a href="https://www.whatsapp.com/?lang=es" target="_blank">
-          <i class="fa-brands fa-whatsapp"></i>
-        </a>
-        <!--con el target blank evito que se cierre la pagina-->
-
-        <h4>instagram</h4>
-        <a href="https://www.instagram.com/?hl=es" target="_blank">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-      </section>
-      <section class="contacto">
-        <h3>contacto</h3>
-        <p>tlf: 123456789</p>
-        <p>email: contacto@madrid.es</p>
-      </section>
-      <section class="ubicacion">
-        <h3>Ubicacion de nuestras oficinas</h3>
-        <p>Calle del Gral. Ibáñez de Ibero, 3, Chamberì</p>
-        <p>CP: 28003</p>
-        <p>Madrid</p>
-      </section>
-      <div class="containerMapa">
-        <!--iframe se utiliza para adjuntar el pana -->
-        <iframe
-          class="mapa"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.3285708004537!2d-3.712730687969553!3d40.4458641
-        53745724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228510002ecd9%3A0xa4b0018da9ef52a0!2sInstituto%20Geogr%C
-        3%A1fico%20Nacional!5e0!3m2!1ses!2ses!4v1707074450342!5m2!1ses!2ses"
-          width="400"
-          height="400"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
+  </footer>
+  <footer class="bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="footer__redes">
+            <h3 class="footer__h3 text-center text-uppercase pt-3">nuestras redes sociales</h3>
+            <ul class="d-flex flex-row justify-content-center gap-5">
+              <li>
+                <a href="https://www.whatsapp.com/?lang=es" target="_blank">
+                  <i class="icon_XL ws__color fa-brands fa-whatsapp"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/?hl=es" target="_blank">
+                  <i class="icon_XL insta__color fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/?lang=es" target="_blank">
+                  <i class="icon_XL x__color fa-brands fa-square-x-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <section class="footer__contacto">
+            <h3 class="text-center text-uppercase pt-3">contacto</h3>
+            <p class="text-center">tlf: 123456789</p>
+            <p class="text-center">email: contacto@madrid.es</p>
+          </section>
+        </div>
+        <div class="col-md-4">
+          <section class="footer__ubicacion">
+            <h3 class="text-center text-uppercase pt-3">Ubicacion de nuestras oficinas</h3>
+            <p class="text-center">Calle del Gral. Ibáñez de Ibero, 3, Chamberì</p>
+            <p class="text-center">CP: 28003</p>
+            <p class="text-center">Madrid</p>
+          </section>
+        </div>
       </div>
-    </footer>
-</body>
-</html>
+      <div class="row mt-3">
+        <div class="col">
+          <iframe
+            class="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.3285708004537!2d-3.712730687969553!3d40.4458641
+          53745724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228510002ecd9%3A0xa4b0018da9ef52a0!2sInstituto%20Geogr%C
+          3%A1fico%20Nacional!5e0!3m2!1ses!2ses!4v1707074450342!5m2!1ses!2ses"
+            allowfullscreen="true"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
 </body>
 </html>

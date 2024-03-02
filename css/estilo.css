@@ -1,65 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Protest+Riot&display=swap');
-body{
-    font-size: 16px;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
-
 header{
   background-color: rgb(158, 175, 177);
 }
-h1{
-
+h1,h2,h3,h4,h5,h6,p,span,iframe,a,i{
+  width: fit-content;
+  height: fit-content;
 }
 nav{
   width: 100%;
 }
+.hover-link:hover{
+    box-shadow: 0 5px 0 10px black;
+
+}
 a{
   color: black;
 }
-/*main*/
-@media (max-width: 800px){
-  .container__tarjetas{
-    
-  } 
+
+.icon_XL{
+  font-size: 30px;
+}
+.ws__color{
+  color: green;
+}
+.x__color{
+  color: white;
+}
+.insta__color{
+  color: rgb(233, 136, 10);
 }
 
-footer{
-  .icon_XL{
-    font-size: 30px;
-  }
-  .ws__color{
-    color: green;
-  }
-  .x__color{
-    color: black;
-  }
-  .insta__color{
-    color: rgb(233, 136, 10);
-  }
-  background-color: #ffffff;
-}
-.containerAlzheimer>img{
-  width: 500px;
-  height: 500px;
-  margin: 0 auto;
-  padding: 0.5rem;
+/*------------- MAIN----------*/
 
-}
-.redes{
- 
-}
-.ubicacion{
 
+.container__img__animales{
+  width: 400px;
+  height: fit-content;
+  
 }
-.contacto{
+.container__tarjeta__tigre{
+  width: 400px;
+  height: fit-content;
+}
 
-}
-.mapa{
-  background-color: rgb(101, 178, 192);
-  position: relative;
-  width: 100vw;
-  height: 30vh;
-  display: inline-block;
-}
 form {
   background-color: #fff;
   padding: 20px;
@@ -117,42 +106,38 @@ input[type="submit"]{
 }
 
 
-.test{
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  align-items: center;
-  justify-content: center;
-  padding: 0 20px;
-  overflow: hidden;
-}
-.card1{
-  max-width: 400px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-  gap: 20px;
-  box-shadow: 20px;
-  border: 1px solid red;
-}
-.card1 > img{
-  width: 100%;
-  height: 300;
-  border-radius: 10px;
-}
 
-/* @media (min-width:500px){
-  .card1 > img{
-    height: 400px;
+
+
+
+
+ /*-----------FOOTER-----------------*/
+@media (min-width: 768px){  
+  .footer__h3{
+    text-align: left;
   }
-} */
-
-@media (min-width: 1200px) {
-  .test{
-    flex-direction: row;
+  footer{
+    display:flex;
     flex-wrap: wrap;
   }
+  .footer__redes{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
+  .footer__contacto{
+    padding:0;
+  }
+  .footer__ubicacion{
+    padding: 0;
+  }
+}
+.bg-custom-dark{
+  color: white;
+  background-color: #232323;
+}
+.mapa{
+  position: relative;
+  width: 100%;
+  height:15vh;
 }
