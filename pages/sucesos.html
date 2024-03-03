@@ -14,11 +14,11 @@
   </head>
   <body>
     <header class="container-fluid d-flex justify-content-between align-items-center g-1 desktop-header">
-      <nav class="navbar navbar-expand-lg navbar-lg desktop-navbar">
+      <nav class="navbar navbar-expand-lg navbar-lg">
         <div class="container-fluid">
-          <div>
+          <div class="d-flex flex-column align-items-center">
             <img id="favicon" src="../assets/img/geonet_logo.png" alt="Noticias del planeta" class="w-50" />
-            <h1 class="fs-3 mt-1">GEONET</h1>
+            <h1 class="geonetH1 fs-3 mt-1">GEONET</h1>
           </div>
           <!-- test -->
           <button
@@ -30,7 +30,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars navbar_icon"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav g-4 d-flex align-items-center justify-content-md-between container-md gap-3">
@@ -40,10 +40,10 @@
                 href="../index.html"
                 >Inicio</a
               >
-              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container" href="./animales.html">Animales</a>
-              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container" href="./ciencia.html">Ciencia</a>
-              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container" href="./sucesos.html">Sucesos</a>
-              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container" href="./suscribete.html">Suscribete</a>
+              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container hover-link" href="./animales.html">Animales</a>
+              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container hover-link" href="./ciencia.html">Ciencia</a>
+              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container hover-link" href="./sucesos.html">Sucesos</a>
+              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container hover-link" href="./suscribete.html">Suscribete</a>
             </div>
           </div>
         </div>
@@ -51,23 +51,32 @@
     </header>
     
     <main>
-        <section>
-            <H2>NASA lanza misión espacial para estudiar un asteroide que podría amenazar la Tierra</H2>
-                <p>La NASA lanzó con éxito la misión espacial "DART" (Double Asteroid Redirection Test) con el objetivo de estudiar y desviar un asteroide 
-                    que representa una potencial amenaza para la Tierra en el futuro. La nave espacial se dirige hacia el sistema binario de asteroides Didymos,
-                    donde se espera que colisione con el asteroide más pequeño de la pareja en un intento de alterar su trayectoria orbital. 
-                    Este esfuerzo forma parte de los esfuerzos continuos de la NASA para desarrollar tecnologías de defensa planetaria y proteger nuestro planeta 
-                    de posibles impactos de asteroides.</p>
-          </section>
-          <section class="ImagenNasa">
-              <img  src="../assets/img/nasaFoto.jpg" alt="NASA_meteorito">
-          </section>
-          <section class="videoNasa">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/c8qcsKc8KaI?si=z1t6Yf0WIz7jEb65" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen></iframe>
-          </section>
-
+      <div class="container col-sm-12 col-md-8 col-lg-4 col-xl-4">
+        <h2 class="text-center fs-4 mt-3">NASA lanza misión espacial para estudiar un asteroide que podría amenazar la Tierra</h2>
+      </div>
+      <div class="container mt-3">
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-8 col-lg-4 col-xl-4">
+            <section>
+              <p>La NASA lanzó con éxito la misión espacial "DART" (Double Asteroid Redirection Test) con el objetivo de estudiar y desviar un 
+                asteroide que representa una potencial amenaza para la Tierra en el futuro. La nave espacial se dirige hacia el sistema binario 
+                de asteroides Didymos, donde se espera que colisione con el asteroide más pequeño de la pareja en un intento de alterar su trayectoria orbital.</p> 
+                <p>Este esfuerzo forma parte de los esfuerzos continuos de la NASA para desarrollar tecnologías de defensa planetaria y 
+                  proteger nuestro planeta de posibles impactos de asteroides.</p>
+            </section>
+          </div>
+          <div class="container__img__general col-sm-12 col-md-8 col-lg-4 col-xl-4">
+            <section class="ImagenNasa">
+              <img src="../assets/img/nasaFoto.jpg" alt="NASA_meteorito" class="img-fluid">
+            </section>
+          </div>
+          <div class="container">
+            <section class="contaienr__video__nasa ratio ratio-21x9 col-sm-12 col-md-8 col-lg-4 col-xl-4 my-3">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/c8qcsKc8KaI?si=z1t6Yf0WIz7jEb65" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </section>
+          </div>
+        </div>
+      </div>
 
 
     </main>
@@ -79,7 +88,7 @@
         <div class="col-md-4">
           <div class="footer__redes">
             <h3 class="footer__h3 text-center text-uppercase pt-3">nuestras redes sociales</h3>
-            <ul class="d-flex flex-row justify-content-center gap-5">
+            <ul class="ul__center d-flex flex-row  gap-5">
               <li>
                 <a href="https://www.whatsapp.com/?lang=es" target="_blank">
                   <i class="icon_XL ws__color fa-brands fa-whatsapp"></i>
@@ -107,7 +116,7 @@
         </div>
         <div class="col-md-4">
           <section class="footer__ubicacion">
-            <h3 class="text-center text-uppercase pt-3">Ubicacion de nuestras oficinas</h3>
+            <h3 class=" text-uppercase pt-3">Ubicacion de nuestras oficinas</h3>
             <p class="text-center">Calle del Gral. Ibáñez de Ibero, 3, Chamberì</p>
             <p class="text-center">CP: 28003</p>
             <p class="text-center">Madrid</p>

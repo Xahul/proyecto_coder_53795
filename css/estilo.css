@@ -6,18 +6,20 @@
   list-style-type: none;
 }
 header{
-  background-color: rgb(158, 175, 177);
+  background-color: #232323;
 }
-h1,h2,h3,h4,h5,h6,p,span,iframe,a,i{
-  width: fit-content;
-  height: fit-content;
+.navbar_icon{
+  color:  white;
+}
+.geonetH1{
+  color: white;
 }
 nav{
   width: 100%;
 }
 .hover-link:hover{
-    box-shadow: 0 5px 0 10px black;
-
+    background-color: #000 !important;
+    color: #fece00 !important;
 }
 a{
   color: black;
@@ -38,15 +40,16 @@ a{
 
 /*------------- MAIN----------*/
 
-
-.container__img__animales{
-  width: 400px;
-  height: fit-content;
-  
-}
-.container__tarjeta__tigre{
-  width: 400px;
-  height: fit-content;
+@media(min-width:1024px) {
+  .container__img__general{
+    width: 600px;
+  }
+  .img-fluid{
+    height: 290px;
+  }
+} 
+.img-fluid{
+  border-radius: 20px !important;
 }
 
 form {
@@ -94,28 +97,17 @@ input[type="submit"]{
   width: 100%;
 }
 
-.beneficios>h2{
-  margin-top: 30px;
-  font-family: "Protest Riot", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.beneficios>p{
-  margin-top: 30px;
-  display: inline-block;
-}
-
-
-
-
-
-
-
  /*-----------FOOTER-----------------*/
+ .ul__center{
+  justify-content: center;
+ }
 @media (min-width: 768px){  
   .footer__h3{
     text-align: left;
   }
+  .ul__center{
+    justify-content: left;
+   }
   footer{
     display:flex;
     flex-wrap: wrap;

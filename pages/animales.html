@@ -14,11 +14,11 @@
   </head>
   <body>
     <header class="container-fluid d-flex justify-content-between align-items-center g-1 desktop-header">
-      <nav class="navbar navbar-expand-lg navbar-lg desktop-navbar">
+      <nav class="navbar navbar-expand-lg navbar-lg">
         <div class="container-fluid">
-          <div>
+          <div class="d-flex flex-column align-items-center">
             <img id="favicon" src="../assets/img/geonet_logo.png" alt="Noticias del planeta" class="w-50" />
-            <h1 class="fs-3 mt-1">GEONET</h1>
+            <h1 class="geonetH1 fs-3 mt-1">GEONET</h1>
           </div>
           <!-- test -->
           <button
@@ -30,44 +30,46 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars navbar_icon"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav g-4 d-flex align-items-center justify-content-md-between container-md gap-3">
+            <div class="navbar-nav g-4 d-flex align-items-center justify-content-md-between container-md gap-3 ">
               <a
                 class="nav-link text-dark active rounded-pill border-primary shadow-sm bg-body rounded text-center container hover-link"
                 aria-current="page"
                 href="../index.html"
                 >Inicio</a
               >
-              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container" href="./animales.html">Animales</a>
-              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container" href="./ciencia.html">Ciencia</a>
-              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container" href="./sucesos.html">Sucesos</a>
-              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container" href="./suscribete.html">Suscribete</a>
+              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container hover-link" href="./animales.html">Animales</a>
+              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container hover-link" href="./ciencia.html">Ciencia</a>
+              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container hover-link" href="./sucesos.html">Sucesos</a>
+              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container hover-link" href="./suscribete.html">Suscribete</a>
             </div>
           </div>
         </div>
       </nav>
     </header>
+
     <main>
-      <div class="container mt-3">
+      <div class="container col-sm-12 col-md-8 col-lg-4 col-xl-4">
+        <H2 class="text-center fs-4 mt-3">Descubren nueva especie de rana en la selva amazónica</H2>
+      </div>
+        <div class="container mt-3">
         <div class="row justify-content-center">
           <div class="col-sm-12 col-md-8 col-lg-4 col-xl-4">
             <section class="container__animales">
-              <H2 class="text-center">Descubren nueva especie de rana en la selva amazónica</H2>
               <p>Investigadores en una expedición científica en la selva amazónica han anunciado el descubrimiento de una nueva especie de rana. 
                 La especie recién descubierta, llamada "Rana esmeralda amazónica" (Dendrobates amazonicus), fue encontrada en una remota región de la Amazonía brasileña.
                 La rana es notable por su vibrante coloración verde esmeralda y su patrón único de manchas en la piel. 
                 Los científicos creen que esta especie ha evolucionado para camuflarse entre la densa vegetación de la selva tropical.</p>
               </section>
             </div>
-              <section class="container__img__animales container">
+              <section class="container__img__general container">
                 <img  src="../assets/img/RanaAnimales.jpg" class=" img-fluid" alt="Rana_nuevaEspecia">
               </section>
             </div>
-            <div class="container-fluid col-sm-12 col-md-8 col-lg-4 col-xl-4 mt-3">
-              <div>
-                <section class="videoAnimales container-fluid">
+              <div class="container">
+                <section class="container__video__animales ratio ratio-21x9 col-sm-12 col-md-8 col-lg-4 col-xl-4 my-3">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/qH0aWumTk6Q?si=KBEOeO8Coyv666aJ" 
                   title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                   allowfullscreen></iframe>
@@ -76,6 +78,7 @@
             </div>
           </div>
         </main>
+
       </footer>
       <footer class="bg-dark text-white">
         <div class="container">
@@ -83,7 +86,7 @@
         <div class="col-md-4">
           <div class="footer__redes">
             <h3 class="footer__h3 text-center text-uppercase pt-3">nuestras redes sociales</h3>
-            <ul class="d-flex flex-row justify-content-center gap-5">
+            <ul class="ul__center d-flex flex-row gap-5">
               <li>
                 <a href="https://www.whatsapp.com/?lang=es" target="_blank">
                   <i class="icon_XL ws__color fa-brands fa-whatsapp"></i>
@@ -111,7 +114,7 @@
         </div>
         <div class="col-md-4">
           <section class="footer__ubicacion">
-            <h3 class="text-center text-uppercase pt-3">Ubicacion de nuestras oficinas</h3>
+            <h3 class="text-uppercase pt-3">Ubicacion de nuestras oficinas</h3>
             <p class="text-center">Calle del Gral. Ibáñez de Ibero, 3, Chamberì</p>
             <p class="text-center">CP: 28003</p>
             <p class="text-center">Madrid</p>

@@ -14,11 +14,11 @@
   </head>
   <body>
     <header class="container-fluid d-flex justify-content-between align-items-center g-1 desktop-header">
-      <nav class="navbar navbar-expand-lg navbar-lg desktop-navbar">
+      <nav class="navbar navbar-expand-lg navbar-lg">
         <div class="container-fluid">
-          <div>
+          <div class="d-flex flex-column align-items-center">
             <img id="favicon" src="../assets/img/geonet_logo.png" alt="Noticias del planeta" class="w-50" />
-            <h1 class="fs-3 mt-1">GEONET</h1>
+            <h1 class="geonetH1 fs-3 mt-1">GEONET</h1>
           </div>
           <!-- test -->
           <button
@@ -30,7 +30,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars navbar_icon"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav g-4 d-flex align-items-center justify-content-md-between container-md gap-3">
@@ -40,16 +40,15 @@
                 href="../index.html"
                 >Inicio</a
               >
-              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container" href="./animales.html">Animales</a>
-              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container" href="./ciencia.html">Ciencia</a>
-              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container" href="./sucesos.html">Sucesos</a>
-              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container" href="./suscribete.html">Suscribete</a>
+              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container hover-link" href="./animales.html">Animales</a>
+              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container hover-link" href="./ciencia.html">Ciencia</a>
+              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container hover-link" href="./sucesos.html">Sucesos</a>
+              <a class="nav-link text-dark rounded-pill shadow-sm bg-body rounded text-center container hover-link" href="./suscribete.html">Suscribete</a>
             </div>
           </div>
         </div>
       </nav>
     </header>
-    
     <main>
       <div class="container my-3">
         <form>
@@ -62,14 +61,14 @@
             <input type="email" class="form-control" id="email" name="email" required>
           </div>
           <div class="form-group">
-            <label for="password">Contraseña:</label>
-            <input type="password" class="form-control" id="password" name="password" required>
+            <label for="contraseña">Contraseña:</label>
+            <input type="contraseña" class="form-control" id="contraseña" name="contraseña" required>
           </div>
           <div class="form-group">
-            <label for="confirm_password">Confirmar Contraseña:</label>
-            <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
+            <label for="confirmar contraseña">Confirmar Contraseña:</label>
+            <input type="confirmar contraseña" class="form-control" id="confirmar contraseña" name="confirmar contraseña" required>
           </div>
-          <button type="submit" class="btn btn-primary">Registrarse</button>
+          <button type="submit" class="btn btn-primary mt-2">Registrarse</button>
         </form>
       </div>
     
@@ -92,7 +91,7 @@
         <div class="col-md-4">
           <div class="footer__redes">
             <h3 class="footer__h3 text-center text-uppercase pt-3">nuestras redes sociales</h3>
-            <ul class="d-flex flex-row justify-content-center gap-5">
+            <ul class="ul__center d-flex flex-row  gap-5">
               <li>
                 <a href="https://www.whatsapp.com/?lang=es" target="_blank">
                   <i class="icon_XL ws__color fa-brands fa-whatsapp"></i>
@@ -120,7 +119,7 @@
         </div>
         <div class="col-md-4">
           <section class="footer__ubicacion">
-            <h3 class="text-center text-uppercase pt-3">Ubicacion de nuestras oficinas</h3>
+            <h3 class=" text-uppercase pt-3">Ubicacion de nuestras oficinas</h3>
             <p class="text-center">Calle del Gral. Ibáñez de Ibero, 3, Chamberì</p>
             <p class="text-center">CP: 28003</p>
             <p class="text-center">Madrid</p>
