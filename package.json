@@ -1,0 +1,22 @@
+{
+  "name": "preentrega_xahultalavera",
+  "version": "1.0.0",
+  "description": "proyecto de xahul",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xahul/proyecto_coder_xahul_53795.git"
+  },
+  "author": "Xahul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xahul/proyecto_coder_xahul_53795/issues"
+  },
+  "homepage": "https://github.com/Xahul/proyecto_coder_xahul_53795#readme",
+  "dependencies": {
+    "sass": "^1.71.1"
+  }
+}
