@@ -29,14 +29,10 @@ a{
   .container__img__general{
     width: 600px;
   }
-  // .img-fluid{
-  //   height: 290px;
-  // }
 } 
-// .img-fluid{
-//   border-radius: 20px !important;
-// }
-
+li{
+  width: 100%;
+}
 form {
   background-color: map-get($map: $colors, $key:white-100 );
   padding: 20px;
