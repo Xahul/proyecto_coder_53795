@@ -1,0 +1,139 @@
+@import "imports";
+h1,h2,h3,h4,h5,h6,p,a{
+  font-family: $tipografia__principal;
+  font-weight: 400;
+  font-style: normal;
+}
+header{
+  background-color: map-get($map: $colors, $key:dark-800);
+}
+.navbar_icon{
+  color: map-get($map: $colors, $key:white-100 );
+}
+.geonetH1{
+  color: map-get($map: $colors, $key:white-100 );
+}
+nav{
+  width: 100%;
+}
+.hover-link:hover{
+    background-color: $black !important;
+    color: #fece00 !important;
+}
+a{
+  color: $black;
+}
+/*------------- MAIN----------*/
+
+@media(min-width:1024px) {
+  .container__img__general{
+    width: 600px;
+  }
+  // .img-fluid{
+  //   height: 290px;
+  // }
+} 
+// .img-fluid{
+//   border-radius: 20px !important;
+// }
+
+form {
+  background-color: map-get($map: $colors, $key:white-100 );
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"]{
+  @include inputs(100%, 10px, 15px, 1px, 4px, $gray__300);
+}
+input[type="email"]{
+  @include inputs(100%, 10px, 15px, 1px, 4px, $gray__300);
+}
+input[type="password"]{
+  @include inputs(100%, 10px, 15px, 1px, 4px, $gray__300);
+}
+
+input[type="submit"]{
+  @include inputs(100%, 15px 20px, 15px, none, 4px, $gray__300);
+  background-color: #5b40f1;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  color: map-get($map: $colors, $key:dark-800 );
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .img__galery__space{
+    margin-bottom: 1.0rem;
+  }
+}
+.img__galery{
+  border-radius: 20px !important;
+}
+.max__container{
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+ /*-----------FOOTER-----------------*/
+ .ul__center{
+  justify-content: center;
+ }
+ .ws__color{
+  color: green;
+}
+.x__color{
+  color: $White__100;
+}
+.insta__color{
+  color: rgb(233, 136, 10);
+}
+@media (min-width: 768px){  
+  .footer__h3{
+    text-align: left;
+  }
+  .ul__center{
+    justify-content: left;
+   }
+  footer{
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .footer__redes{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
+  .icon_XL{
+    font-size: 30px;
+  }
+  .ws__color{
+    color: green;
+  }
+  .x__color{
+    color: $White__100;
+  }
+  .insta__color{
+    color: rgb(233, 136, 10);
+  }
+  
+  .footer__contacto{
+    padding:0;
+  }
+  .footer__ubicacion{
+    padding: 0;
+  }
+}
+.bg-custom-dark{
+  color: map-get($map: $colors, $key:dark-800);
+  background-color: map-get($map: $colors, $key:dark-800);
+}
+.mapa{
+  position: relative;
+  width: 100%;
+  height:15vh;
+}

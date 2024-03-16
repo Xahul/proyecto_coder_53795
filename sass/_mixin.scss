@@ -1,0 +1,9 @@
+/* MIXIN*/
+@mixin inputs( $width, $padding, $margin-bottom, $border, $border-radius, $color){
+    width: $width;
+    padding: $padding;
+    margin-bottom: $margin-bottom;
+    border: $border solid $color;
+    border-radius: $border-radius;
+
+}
