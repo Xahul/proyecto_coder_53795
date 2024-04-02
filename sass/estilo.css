@@ -62,6 +62,10 @@ a {
     width: 600px;
   }
 }
+li {
+  width: 100%;
+}
+
 form {
   background-color: #fff;
   padding: 20px;
@@ -123,6 +127,10 @@ input[type=submit] {
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
+}
+
+.img__asteroide {
+  max-height: 500px;
 }
 
 /*-----------FOOTER-----------------*/
